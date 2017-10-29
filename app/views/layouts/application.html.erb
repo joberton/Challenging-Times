@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UltimateChallange45</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<header>
+		<nav>
+			<ul>
+				<li><%= link_to 'about', about_url %> </li>
+				<li><%= link_to 'home', pages_url %></li>
+			</ul>
+		</nav>
+	</header>
+    <%= yield %>
+  </body>
+</html>
