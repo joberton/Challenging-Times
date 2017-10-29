@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+100.times{Zelda.create(:game => Faker::Zelda.game, :character => Faker::Zelda.character, :location => Faker::Zelda.location)}
+

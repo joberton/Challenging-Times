@@ -1,0 +1,6 @@
+      invoke  active_record
+      create    db/migrate/20171029175101_create_zeldas.rb
+   identical    app/models/zelda.rb
+      invoke    test_unit
+   identical      test/models/zelda_test.rb
+      create      test/fixtures/zeldas.yml
