@@ -1,0 +1,17 @@
+<h1>yo zelda are you that guy with the green hat and the tunic?</h1>
+<% if !@zeldas.nil? %>
+	<% @zeldas.each do |zelda| %>
+		<ul>
+			<li><strong><%= zelda.game%></strong></li>
+			<li><%= zelda.location %></li>
+			<li><%= zelda.character %></li>
+		</ul>
+	<% end %>
+<% else %>
+	<ul>
+		<li><strong><%= @zelda.game%></strong></li>
+		<li><%= @zelda.location %></li>
+		<li><%= @zelda.character %></li>
+	</ul>
+<% end %>
+
