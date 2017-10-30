@@ -4,6 +4,6 @@ class ZeldasController < ApplicationController
 	end
 
 	def zelda
-		@zelda = Zelda.find(params[:number].to_i)
+		@zelda = Zelda.find(params[:id])
 	end
 end
